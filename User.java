@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class User {
     @Id
-    @GeneratedValue  //使用物理删除 id使用生成的
+    @GeneratedValue  
     private Long id;
 
     @Column(name="name",nullable = true,length = 20)
