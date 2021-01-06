@@ -28,7 +28,7 @@ public class UserController {
     }
     @RequestMapping("/add")
     public String add(User user){
-        userService.creatUser(user);//添加表单的元素
+        userService.creatUser(user);
         return "redirect:/managerUser/getUserList";
     }
     @RequestMapping("/toEdit/{id}")
